@@ -1,0 +1,82 @@
+:root{
+    --bgcolr : #000090;
+    --lightblue : rgb(0,75,232);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: var(--bgcolr);
+  overflow-x: hidden;
+}
+
+.headerdiv{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+header div input , button{
+    margin: 5px;
+    background-color: var(--lightblue);
+    border: none;
+    padding: 5px;
+}
+header div input::placeholder , button{
+    color: white ;
+}
+.revarea{
+    display: flex;
+    flex-direction: row;
+}
+.parantRev{
+    background-color: var(--lightblue);
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+.revhead{
+    margin-bottom: 10px;
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+.stars{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.textrev{
+    color: white;
+    text-indent: 15px;
+}
+.Catholder{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+.catimg{
+    max-width: 300px;
+    max-height: 300px;
+}
+.catimg img{
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover   ;
+}
+.Catholder .catimg h4{
+     color: white;
+     background-color: var(--bgcolr);
+     max-width: fit-content;
+     padding: 5px;
+     position: absolute;
+     margin-top: -33px;
+     margin-left: 0px;
+
+}
+.carouseimg{
+    object-fit: contain;
+    max-height: 500px;
+}
